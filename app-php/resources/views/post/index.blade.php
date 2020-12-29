@@ -25,9 +25,23 @@
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded font-medium">Post</button>
     </div>
         </form>
+<table style="width: 100%">
+    <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Body</th>
+        <th>Date</th>
 
-
-
+    </tr>
+        @foreach($posts as $key => $data)
+            <tr>
+                <th>{{$data->id}}</th>
+                <th>{{$data->user_id}}</th>
+                <th>{{$data->body}}</th>
+                <th>{{$data->created_at}}</th>
+            </tr>
+        @endforeach
+</table>
     </div>
 </div>
 
