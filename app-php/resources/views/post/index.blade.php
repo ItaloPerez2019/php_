@@ -42,6 +42,7 @@
             </tr>
         @endforeach
 </table>
+      <?php echo $posts->links(); ?>
     </div>
 </div>
 
